@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+div {
+  text-align: center;
+}
+</style>
+<script src="/tic-tac-toe/app.js"></script>
+</head>
+<body>
+<div>
+<h1 style="font-family:Arial,Helvetica,sans-serif" id="header">Tic-Tac-Toe</h1>
+<button style="height:30px;width:95px;font-family:Arial,Helvetica,sans-serif;" onclick="createNewGame()">New Game!</button>
+</div>
+<div style="height:15px"></div>
+<table id="grid">
+  <colgroup>
+    <col span="3" style="background-color:lightslategray">
+  </colgroup>
+  <tr>
+    <th><button style="height:170px;width:170px;font-size:95px" onclick="blockClick(0, 0)" value=" " id="0, 0"></button></th>
+    <th><button style="height:170px;width:170px;font-size:95px" onclick="blockClick(0, 1)" value=" " id="0, 1"></button></th>
+    <th><button style="height:170px;width:170px;font-size:95px" onclick="blockClick(0, 2)" value=" " id="0, 2"></button></th>
+  </tr>
+  <tr>
+    <th><button style="height:170px;width:170px;font-size:95px" onclick="blockClick(1, 0)" value=" " id="1, 0"></button></th>
+    <th><button style="height:170px;width:170px;font-size:95px" onclick="blockClick(1, 1)" value=" " id="1, 1"></button></th>
+    <th><button style="height:170px;width:170px;font-size:95px" onclick="blockClick(1, 2)" value=" " id="1, 2"></button></th>
+  </tr>
+  <tr>
+    <th><button style="height:170px;width:170px;font-size:95px" onclick="blockClick(2, 0)" value=" " id="2, 0"></button></th>
+    <th><button style="height:170px;width:170px;font-size:95px" onclick="blockClick(2, 1)" value=" " id="2, 1"></button></th>
+    <th><button style="height:170px;width:170px;font-size:95px" onclick="blockClick(2, 2)" value=" " id="2, 2"></button></th>
+  </tr>
+</table>
+
+</body>
+</html>
